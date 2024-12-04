@@ -34,6 +34,7 @@ pipeline {
         stage('E2E Test') {
             steps {
                 sh 'test -f build/index.html'
+                echo 'E2E Test Successful'
             }
         }
     }
