@@ -6,8 +6,9 @@ test("renders learn Jenkins link", () => {
   const linkElement = screen.getByText(/learn Jenkins/i);
   expect(linkElement).toBeInTheDocument();
 });
-test("renders my name", () => {
+
+test("contains app version paragraph", () => {
   render(<App />);
-  const linkElement = screen.getByText(/Emmanuel/i);
-  expect(linkElement).toBeInTheDocument();
+  const appVersion = screen.getByText(/application version/i);
+  expect(appVersion).toBeInTheDocument();
 });
