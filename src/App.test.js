@@ -9,6 +9,6 @@ test("renders learn Jenkins link", () => {
 
 test("contains app version paragraph", () => {
   render(<App />);
-  const appVersion = screen.getByText(/application version/i);
+  const appVersion = screen.getByText(/emmanuel version/i);
   expect(appVersion).toBeInTheDocument();
 });
