@@ -12,3 +12,9 @@ test("contains app version paragraph", () => {
   const appVersion = screen.getByText(/emmanuel version/i);
   expect(appVersion).toBeInTheDocument();
 });
+
+test("test trigger", () => {
+  render(<App />);
+  const appVersion = screen.getByText(/emmanuel version/i);
+  expect(appVersion).toBeInTheDocument();
+});
